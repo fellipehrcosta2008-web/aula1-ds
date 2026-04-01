@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Livraria de Hogwarts</title>
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #020617, #0f172a, #020617);
+    background-size: 600% 600%;
+    animation: fundoMagico 15s ease infinite;
+    color: #e5e5e5;
+}
+
+/* ANIMAÇÃO DE FUNDO */
+@keyframes fundoMagico {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 2px solid gold;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    color: gold;
+}
+
+/* MENU */
+nav a {
+    color: #d1d5db;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARDS */
+.section {
+    background: rgba(31,41,55,0.8);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border-left: 5px solid gold;
+    transition: 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px gold;
+}
+
+/* LINKS */
+.links a {
+    display: block;
+    margin-top: 10px;
+    color: #60a5fa;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: gold;
+}
+
+/* PARTÍCULAS */
+.magic {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.spark {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: gold;
+    border-radius: 50%;
+    animation: subir 5s linear infinite;
+}
+
+@keyframes subir {
+    from {transform: translateY(100vh); opacity:1;}
+    to {transform: translateY(-10vh); opacity:0;}
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #1e293b;
+    color: #ffffff
+}
+</style>
+</head>
+
+<body>
+
+<!-- PARTÍCULAS -->
+<div class="magic">
+    <div class="spark" style="left:10%; animation-delay:0s;"></div>
+    <div class="spark" style="left:30%; animation-delay:2s;"></div>
+    <div class="spark" style="left:50%; animation-delay:4s;"></div>
+    <div class="spark" style="left:70%; animation-delay:1s;"></div>
+    <div class="spark" style="left:90%; animation-delay:3s;"></div>
+</div>
+
+<header>
+<h1>⚡ Livraria de Hogwarts</h1>
+
+<nav>
+<a href="pages/livros.html">Livros</a>
+<a href="pages/autores.html">Autores</a>
+<a href="pages/resenhas.html">Resenhas</a>
+<a href="pages/contato.html">Contato</a>
+</nav>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Bem-vindo a Livraria Mágica</h2>
+
+<p>Bem-vindo à Livraria de Hogwarts, onde cada página guarda um pouco de magia.</p>
+<p>Explore histórias encantadas, descubra segredos antigos e embarque em aventuras <br> que vão muito além da imaginação.</p>
+<p>Aqui, todo leitor encontra o seu feitiço favorito. ✨📚</p>
+
+</div>
+
+<div class="section links">
+<h2>Biblioteca Mágica Real</h2>
+
+
+<a href="https://www.wizardingworld.com/" target="_blank">Wizarding World</a>
+
+</div>
+
+</div>
+
+<footer>
+    © 2026 Livraria de Hogwarts
+</footer>
+
+</body>
+</html>
