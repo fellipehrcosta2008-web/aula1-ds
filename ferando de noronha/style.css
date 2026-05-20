@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #f4f4f4;
+    color: #333;
+}
+
+header{
+    background: #0080ff;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner{
+    height: 80vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('image/fernando\ de\ noronha.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.botao{
+    background: #00b894;
+    color: white;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.sobre,
+.conteudo,
+.contato{
+    padding: 40px;
+}
+
+.sobre h2,
+.conteudo h1,
+.contato h1{
+    margin-bottom: 20px;
+    color: #0080ff;
+}
+
+.card{
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea{
+    margin-bottom: 15px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+textarea{
+    height: 120px;
+}
+
+button{
+    background: #0080ff;
+    color: white;
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+footer{
+    background: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
