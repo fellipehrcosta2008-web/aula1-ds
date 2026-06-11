@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    min-height:100vh;
+
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.header{
+    background:#0f172a;
+    color:white;
+    padding:20px 5%;
+
+    display:grid;
+    grid-template-columns:200px 1fr;
+    align-items:center;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.menu{
+    list-style:none;
+
+    display:grid;
+    grid-auto-flow:column;
+    justify-content:end;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:500px;
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('imagens/futuro\ da\ tecnologia.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:grid;
+    place-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#38bdf8;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.home-grid{
+    padding:50px 5%;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.destaque{
+    grid-column:span 2;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h2,
+.card h3,
+.card p{
+    padding:15px;
+}
+
+.galeria{
+    padding:50px 5%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.card-galeria{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card-galeria h3{
+    padding:20px;
+}
+
+.pagina-detalhe{
+    padding:50px 5%;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+}
+
+.imagem-principal img{
+    height:100%;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.info{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    display:grid;
+    gap:20px;
+}
+
+.categoria{
+    background:#38bdf8;
+    color:white;
+    width:max-content;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.sobre-grid{
+    padding:50px 5%;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.bloco,
+.equipe{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.equipe{
+    grid-column:span 3;
+}
+
+.titulo-pagina{
+    text-align:center;
+    padding:50px 0 20px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:992px){
+
+    .home-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .sobre-grid{
+        grid-template-columns:1fr;
+    }
+
+    .equipe{
+        grid-column:span 1;
+    }
+
+    .pagina-detalhe{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .header{
+        grid-template-columns:1fr;
+        gap:20px;
+        text-align:center;
+    }
+
+    .menu{
+        grid-auto-flow:row;
+        justify-content:center;
+    }
+
+    .home-grid{
+        grid-template-columns:1fr;
+    }
+
+    .destaque{
+        grid-column:span 1;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+}
